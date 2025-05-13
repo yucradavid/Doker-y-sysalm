@@ -43,7 +43,7 @@ pipeline {
 
                 sleep(10) //seconds
 
-                timeout(time: 4, unit: 'MINUTES'){
+                timeout(time: 8, unit: 'MINUTES'){
                     waitForQualityGate abortPipeline: true
                 }
             }
